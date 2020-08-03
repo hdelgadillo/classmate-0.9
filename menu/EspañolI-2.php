@@ -33,7 +33,7 @@
     <!-- Main CSS-->
     <link href="css/theme.css" rel="stylesheet" media="all">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-
+    <link rel="stylesheet" href="css/modal.css">
 
     
 <script>
@@ -49,7 +49,7 @@
     })
     .then((willDelete) => {
       if (willDelete) {
-        window.location.replace("EspañolI.html");
+        window.location.replace("EspañolI.php");
       } else {
         swal("Your imaginary file is safe!");
       }
@@ -178,228 +178,18 @@
         </header>
         <!-- END HEADER MOBILE-->
  <!-- MENU SIDEBAR-->
- <aside class="menu-sidebar d-none d-lg-block">
-    <div class="logo">
-        <a href="#">
-            <img src="images/icon/myclassmate.png" alt="Cool Admin" />
-        </a>
-    </div>
-    <div class="menu-sidebar__content js-scrollbar1">
-        <nav class="navbar-sidebar">
-            <ul class="list-unstyled navbar__list">
-                <li class="active has-sub">
-                    <a class="js-arrow" href="index.html">
-                        <i class="fas fa-user"></i>Inicio</a>
-                  
-                </li>
-                <li>
-                    <a href="chart.html">
-                        <i class="fas fa-envelope"></i>Buzon</a>
-                </li>
-                <li>
-                    <a href="calendar.html">
-                        <i class="fas fa-calendar-alt"></i>Calendario</a>
-                </li>
-                <li>
-                    <a href="form.html">
-                        <i class="far fa-chart-bar"></i>Estadisticas</a>
-                </li>
-                <li>
-                    <a href="calendar.html">
-                        <i class="fas fa-check-square"></i>Plantillas de examenes</a>
-                </li>
-                <li>
-                    <a href="map.html">
-                        <i class="fas fa-clock-o"></i>Historial</a>
-                </li>
-                <li class="has-sub">
-                    <a class="js-arrow" href="#">
-                        <i class="fas  fa-users"></i>Administrar alumnos</a>
-                  
-                </li>
-                <li class="has-sub">
-                    <a class="js-arrow" href="#">
-                        <i class="fas fa-desktop"></i>Ayuda</a>
-                  
-                </li>
-            </ul>
-        </nav>
-    </div>
-</aside>
+	<?php 
+		   include 'menu_sidebar.html';
+	?>
 <!-- END MENU SIDEBAR-->
 
         <!-- PAGE CONTAINER-->
         <div class="page-container">
             <!-- HEADER DESKTOP-->
-            <header class="header-desktop">
-                <div class="section__content section__content--p30">
-                    <div class="container-fluid">
-                        <div class="header-wrap">
-                            <form class="form-header" action="" method="POST">
-                                <input class="au-input au-input--xl" type="text" name="search" placeholder="Buscar..." />
-                                <button class="au-btn--submit" type="submit">
-                                    <i class="zmdi zmdi-search"></i>
-                                </button>
-                            </form>
-                            <div class="header-button">
-                                <div class="noti-wrap">
-                                    <div class="noti__item js-item-menu">
-                                        <i class="zmdi zmdi-comment-more"></i>
-                                        <span class="quantity">1</span>
-                                        <div class="mess-dropdown js-dropdown">
-                                            <div class="mess__title">
-                                                <p>Tienes 2 nuevos mensajes</p>
-                                            </div>
-                                            <div class="mess__item">
-                                                <div class="image img-cir img-40">
-                                                    <img src="images/icon/avatar-06.jpg" alt="Michelle Moreno" />
-                                                </div>
-                                                <div class="content">
-                                                    <h6>Michelle Moreno</h6>
-                                                    <p>Envio una foto</p>
-                                                    <span class="time">Hace 3 min.</span>
-                                                </div>
-                                            </div>
-                                            <div class="mess__item">
-                                                <div class="image img-cir img-40">
-                                                    <img src="images/icon/avatar-04.jpg" alt="Diane Myers" />
-                                                </div>
-                                                <div class="content">
-                                                    <h6>Diane Myers</h6>
-                                                    <p>You are now connected on message</p>
-                                                    <span class="time">Yesterday</span>
-                                                </div>
-                                            </div>
-                                            <div class="mess__footer">
-                                                <a href="#">View all messages</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="noti__item js-item-menu">
-                                        <i class="zmdi zmdi-email"></i>
-                                        <span class="quantity">1</span>
-                                        <div class="email-dropdown js-dropdown">
-                                            <div class="email__title">
-                                                <p>You have 3 New Emails</p>
-                                            </div>
-                                            <div class="email__item">
-                                                <div class="image img-cir img-40">
-                                                    <img src="images/icon/avatar-06.jpg" alt="Cynthia Harvey" />
-                                                </div>
-                                                <div class="content">
-                                                    <p>Meeting about new dashboard...</p>
-                                                    <span>Cynthia Harvey, 3 min ago</span>
-                                                </div>
-                                            </div>
-                                            <div class="email__item">
-                                                <div class="image img-cir img-40">
-                                                    <img src="images/icon/avatar-05.jpg" alt="Cynthia Harvey" />
-                                                </div>
-                                                <div class="content">
-                                                    <p>Meeting about new dashboard...</p>
-                                                    <span>Cynthia Harvey, Yesterday</span>
-                                                </div>
-                                            </div>
-                                            <div class="email__item">
-                                                <div class="image img-cir img-40">
-                                                    <img src="images/icon/avatar-04.jpg" alt="Cynthia Harvey" />
-                                                </div>
-                                                <div class="content">
-                                                    <p>Meeting about new dashboard...</p>
-                                                    <span>Cynthia Harvey, April 12,,2018</span>
-                                                </div>
-                                            </div>
-                                            <div class="email__footer">
-                                                <a href="#">See all emails</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="noti__item js-item-menu">
-                                        <i class="zmdi zmdi-notifications"></i>
-                                        <span class="quantity">3</span>
-                                        <div class="notifi-dropdown js-dropdown">
-                                            <div class="notifi__title">
-                                                <p>Tienes nuevas notificaciones</p>
-                                            </div>
-                                            <div class="notifi__item">
-                                                <div class="bg-c1 img-cir img-40">
-                                                    <i class="zmdi zmdi-email-open"></i>
-                                                </div>
-                                                <div class="content">
-                                                    <p>Tienes un email</p>
-                                                    <span class="date">12 Abril, 2018 06:50</span>
-                                                </div>
-                                            </div>
-                                            <div class="notifi__item">
-                                                <div class="bg-c2 img-cir img-40">
-                                                    <i class="zmdi zmdi-account-box"></i>
-                                                </div>
-                                                <div class="content">
-                                                    <p>Tu cuenta ha sido bloqueada</p>
-                                                    <span class="date">12 Abril, 2018 06:50</span>
-                                                </div>
-                                            </div>
-                                            <div class="notifi__item">
-                                                <div class="bg-c3 img-cir img-40">
-                                                    <i class="zmdi zmdi-file-text"></i>
-                                                </div>
-                                                <div class="content">
-                                                    <p>Tienes un nuevo documento</p>
-                                                    <span class="date">12 Abril, 2018 06:50</span>
-                                                </div>
-                                            </div>
-                                            <div class="notifi__footer">
-                                                <a href="#">Todas las notifiaciones</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="account-wrap">
-                                    <div class="account-item clearfix js-item-menu">
-                                        <div class="image">
-                                            <img src="images/icon/avatar-01.jpg" alt="John Doe" />
-                                        </div>
-                                        <div class="content">
-                                            <a class="js-acc-btn" href="#">Hugo Delgadillo</a>
-                                        </div>
-                                        <div class="account-dropdown js-dropdown">
-                                            <div class="info clearfix">
-                                                <div class="image">
-                                                    <a href="#">
-                                                        <img src="images/icon/avatar-01.jpg" alt="John Doe" />
-                                                    </a>
-                                                </div>
-                                                <div class="content">
-                                                    <h5 class="name">
-                                                        <a href="#">Hugo Delgadillo</a>
-                                                    </h5>
-                                                    <span class="email">hugo.delgadillo@itdmx.com</span>
-                                                </div>
-                                            </div>
-                                            <div class="account-dropdown__body">
-                                                <div class="account-dropdown__item">
-                                                    <a href="#">
-                                                        <i class="zmdi zmdi-account"></i>Cuenta</a>
-                                                </div>
-                                                <div class="account-dropdown__item">
-                                                    <a href="#">
-                                                        <i class="zmdi zmdi-settings"></i>Preferencias</a>
-                                                </div>
-                                               
-                                            </div>
-                                            <div class="account-dropdown__footer">
-                                                <a href="#">
-                                                    <i class="zmdi zmdi-power"></i>Salir</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <!-- HEADER DESKTOP-->
+				<?php 
+					include 'header_desk.html';
+				?>
+            <!-- END HEADER DESKTOP-->
 
             <!-- MAIN CONTENT-->
             <div class="main-content">
@@ -419,17 +209,29 @@
                                         
                                         <div class="title-3 m-b-20">
                                             Español I </div>
-
+                                            
+                                            
+                                                
+                                            
 
                                             <div class="float-right">
 
-                                                <a href="EspañolI-2.html">
+                                            <a href="#"  data-toggle="modal" data-target="#modalZoom">
+                                                <button type="button"class="btn btn-primary " >
+                                                <i class="fas fa-video-camera"></i> Iniciar Conferencia de Zoom
+                                                  </button>
+                                                </a>
+
+                                                <button type="button" data-toggle="modal" data-target="#largeModal3" class="btn btn-dark">
+                                                    Estadisticas
+                                                     </button>
+                                                <a href="EspañolI.php">
                                                 <button type="button" class="btn btn-primary">
                                                  < 
                                                   </button>
                                                 </a>
 
-                                                  <a href="EspañolI.html"> 
+                                                  <a href="EspañolI-3.php"> 
                                             <button type="button" class="btn btn-primary">
                                                  >
                                               </button>
@@ -469,20 +271,23 @@
                                                     </td>
                                                     <td>1ER Bimestre</td>
                                                     <td>Alumno</td>
-                                                    <td>Archivo</td>
+                                                    <td>contenido</td>
                                                     <td>Video o Podcast</td>
-                                                    <td>Contenido</td>
+                                                    
                                                     <td>Actividad</td>
-                                                    <td>Archivo</td>
-                                                    <td>Calif</td>
+                                                    <td>Contenido</td>
+                                                    
                                                     <td>Tarea</td>
-                                                    <td>Archivo</td>
-                                                    <td>Calif</td>
+                                                    <td>Contenido</td>
+                                                    
                                                     <td>Proyecto</td>
-                                                    <td>Calif</td>
+                                                    
                                                     <td>Equipo</td>
-                                                    <td>Archivo</td>
+                                                    <td>Contenido</td>
                                                     <td>Timeline</td>
+                                                    <td>Calif Act.</td>
+                                                    <td>Calif Tarea</td>
+                                                    <td>Calif Proyecto</td>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -505,9 +310,9 @@
                                                         <span class="role user justify-content-center"><i class="fa fa-user" aria-hidden="true"></i></span>
                                                     </td>
 
-                                                    <td> <a href="pdf.pdf" target="_blank"><button type="button" class="btn btn-secondary fa fa-file m-l-10 m-b-10" >
+                                                    <td> <button type="button" class="btn btn-secondary fa fa-file m-l-10 m-b-10" data-toggle="modal" data-target="#largeModal">
                                                            
-                                                     </button></a>
+                                                     </button>
                                                 </td>
 
                                                 <td> <button type="button" class="btn btn-secondary fa fa-play-circle m-l-10 m-b-10" data-toggle="modal" data-target="#largeModal2">
@@ -515,11 +320,6 @@
                                                 </button>
                                            </td>
 
-                                                    <td>
-                                                        <button type="button" class="btn btn-success m-l-10 m-b-10">Listo
-                                                           
-                                                          </button>
-                                                    </td>
 
                                                     <td>
                                                         <button type="button" class="btn btn-success m-l-10 m-b-10">Listo
@@ -532,12 +332,7 @@
                                                     </button>
                                                </td>
 
-                                                    <td>
-                                                        <div class="table-data__info">
-                                                            <h4>9</h4>
-                                                         
-                                                        </div>
-                                                    </td>
+                                                    
 
                                                     <td>
                                                         <button type="button" class="btn btn-warning m-l-10 m-b-10">En proceso
@@ -548,12 +343,7 @@
                                                            
                                                     </button>
                                                </td>
-                                                    <td>
-                                                        <div class="table-data__info">
-                                                            <h4>9</h4>
-                                                         
-                                                        </div>
-                                                    </td>
+                                                   
 
                                                     
                                                     <td>
@@ -561,12 +351,7 @@
                                                            
                                                           </button>
                                                     </td>
-                                                    <td>
-                                                        <div class="table-data__info">
-                                                            <h4>9</h4>
-                                                         
-                                                        </div>
-                                                    </td>
+                                                  
 
 
                                                     <td>
@@ -585,9 +370,30 @@
 
                                                     </td>
                                                     <td>
+                                                        <div class="table-data__info">
+                                                            <h4>9</h4>
+                                                         
+                                                        </div>
+                                                    </td>
 
-                                                       
+                                                    <td>
+                                                        <div class="table-data__info">
+                                                            <h4>9</h4>
+                                                         
+                                                        </div>
+                                                    </td>
 
+                                                    <td>
+                                                        <div class="table-data__info">
+                                                            <h4>9</h4>
+                                                         
+                                                        </div>
+                                                    </td>
+
+
+                                                    <td>
+
+                                                   
                                                         <span class="more">
                                                             <i class="zmdi zmdi-more"></i>
                                                         </span>
@@ -622,11 +428,7 @@
                                           </td>
 
 
-                                                    <td>
-                                                        <button type="button" class="btn btn-success m-l-10 m-b-10">Listo
-                                                           
-                                                        </button>
-                                                    </td>
+                                                    
                                                     <td>
                                                         <button type="button" class="btn btn-success m-l-10 m-b-10">Listo
                                                            
@@ -638,12 +440,7 @@
                                                     </button>
                                                </td>
 
-                                                    <td>
-                                                        <div class="table-data__info">
-                                                            <h4>9</h4>
-                                                         
-                                                        </div>
-                                                    </td>
+                                                  
 
 
                                                     <td>
@@ -655,12 +452,7 @@
                                                            
                                                     </button>
                                                </td>
-                                                    <td>
-                                                        <div class="table-data__info">
-                                                            <h4>9</h4>
-                                                         
-                                                        </div>
-                                                    </td>
+                                                   
 
                                                     
                                                     <td>
@@ -668,12 +460,7 @@
                                                            
                                                           </button>
                                                     </td>
-                                                    <td>
-                                                        <div class="table-data__info">
-                                                            <h4>9</h4>
-                                                         
-                                                        </div>
-                                                    </td>
+                                                    
 
                                                     <td>
                                                         <span class="role user justify-content-center"><i class="fa fa-users" aria-hidden="true"></i></span>
@@ -692,8 +479,30 @@
                                                         </div>
 
                                                     </td>
+                                                    <td>
+                                                        <div class="table-data__info">
+                                                            <h4>9</h4>
+                                                         
+                                                        </div>
+                                                    </td>
 
+                                                    <td>
+                                                        <div class="table-data__info">
+                                                            <h4>9</h4>
+                                                         
+                                                        </div>
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="table-data__info">
+                                                            <h4>9</h4>
+                                                         
+                                                        </div>
+                                                    </td>
                                                     
+
+
+
 
                                                     <td>
 
@@ -737,11 +546,7 @@
 
 
 
-                                                    <td>
-                                                        <button type="button" class="btn btn-success m-l-10 m-b-10">Listo
-                                                           
-                                                        </button>
-                                                    </td>
+                                                  
                                                     <td>
                                                         <button type="button" class="btn btn-success m-l-10 m-b-10">Listo
                                                            
@@ -753,12 +558,7 @@
                                                     </button>
                                                </td>
 
-                                                    <td>
-                                                        <div class="table-data__info">
-                                                            <h4>9</h4>
-                                                         
-                                                        </div>
-                                                    </td>
+                                                 
 
                                                     
 
@@ -771,25 +571,14 @@
                                                            
                                                     </button>
                                                </td>
-                                                    <td>
-                                                        <div class="table-data__info">
-                                                            <h4>9</h4>
-                                                         
-                                                        </div>
-                                                    </td>
-                                                    
+                                                   
                                                     <td>
                                                         <button type="button" class="btn btn-warning m-l-10 m-b-10">En proceso
                                                            
                                                           </button>
                                                     </td>
 
-                                                    <td>
-                                                        <div class="table-data__info">
-                                                            <h4>9</h4>
-                                                         
-                                                        </div>
-                                                    </td>
+                                                 
                                                     <td>
                                                         <span class="role user justify-content-center"><i class="fa fa-users" aria-hidden="true"></i></span>
                                                     </td>
@@ -806,7 +595,26 @@
 
                                                 </td>
 
+                                                <td>
+                                                        <div class="table-data__info">
+                                                            <h4>9</h4>
+                                                         
+                                                        </div>
+                                                    </td>
 
+                                                    <td>
+                                                        <div class="table-data__info">
+                                                            <h4>9</h4>
+                                                         
+                                                        </div>
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="table-data__info">
+                                                            <h4>9</h4>
+                                                         
+                                                        </div>
+                                                    </td>
 
                                                     <td>
                                                         <span class="more">
@@ -848,11 +656,7 @@
 
 
 
-                                                    <td>
-                                                        <button type="button" class="btn btn-success m-l-10 m-b-10">Listo
-                                                           
-                                                        </button>
-                                                    </td>
+                                                  
                                                     <td>
                                                         <button type="button" class="btn btn-success m-l-10 m-b-10">Listo
                                                            
@@ -864,12 +668,7 @@
                                                     </button>
                                                </td>
 
-                                                    <td>
-                                                        <div class="table-data__info">
-                                                            <h4>9</h4>
-                                                         
-                                                        </div>
-                                                    </td>
+                                                    
                                                     <td>
                                                         <button type="button" class="btn btn-danger m-l-10 m-b-10">Estancado
                                                            
@@ -879,12 +678,7 @@
                                                            
                                                     </button>
                                                </td>
-                                                    <td>
-                                                        <div class="table-data__info">
-                                                            <h4>9</h4>
-                                                         
-                                                        </div>
-                                                    </td>
+                                                    
                                                     
                                                     <td>
                                                         <button type="button" class="btn btn-warning m-l-10 m-b-10">En proceso
@@ -892,12 +686,7 @@
                                                           </button>
                                                     </td>
 
-                                                    <td>
-                                                        <div class="table-data__info">
-                                                            <h4>9</h4>
-                                                         
-                                                        </div>
-                                                    </td>
+                                                    
                                                     <td>
                                                         <span class="role user justify-content-center"><i class="fa fa-users" aria-hidden="true"></i></span>
                                                     </td>
@@ -914,6 +703,26 @@
                                                              aria-valuemin="0" aria-valuemax="100">17 Sept</div>
                                                         </div>
 
+                                                    </td>
+                                                    <td>
+                                                        <div class="table-data__info">
+                                                            <h4>9</h4>
+                                                         
+                                                        </div>
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="table-data__info">
+                                                            <h4>9</h4>
+                                                         
+                                                        </div>
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="table-data__info">
+                                                            <h4>9</h4>
+                                                         
+                                                        </div>
                                                     </td>
                                                     <td>
                                                         <span class="more">
@@ -955,6 +764,10 @@
                     </div>
                 </div>
             </div>
+
+            <?php
+           include 'oculto.php';
+           ?>
         </div>
 
     </div>
@@ -1000,46 +813,129 @@
 				</div>
 			</div>
             <!-- end modal large -->
+
+
+
+             <!-- modal large -->
+			<div class="modal fade" id="largeModal2" tabindex="-1" role="dialog" aria-labelledby="largeModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-lg" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="largeModalLabel">Agregar elemento a Video</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+                        <div class="card">
+                            <div class="card-header">
+                                <strong>Adjuntar Video</strong> 
+                            </div>
+                            <div class="card-body card-block">
+                                <form action="" method="post" class="" id="formulario">
+                                   
+                                    <div class="form-group">
+                                        <label for="nf-password" class=" form-control-label">Adjuntar achivo</label>
+                                        <input type="file" id="nf-password" name="nf-password" placeholder="Ingrese nombre del grupo" class="form-control">
+                                        <span class="help-block"></span>
+                                    </div>
+                                   
+                                </form>
+                            </div>
+                            <div class="card-footer">
+                                <button type="submit" id="boton-enviar" class="btn btn-primary btn-sm">
+                                    <i class="fa fa-dot-circle-o"></i> Enviar
+                                </button>
+                                <button type="reset" class="btn btn-danger btn-sm">
+                                    <i class="fa fa-ban"></i> Reset
+                                </button>
+                            </div>
+                        </div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+            <!-- end modal large -->
+    
+
+            <!--Modal Zoom-->
+
+
+            <div class="modal fade" id="modalZoom" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Crear sala</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <input type="email" id="defaultForm-email" class="form-control validate" placeholder="Id de reunion">
+          
+        </div>
+
+        <div class="md-form mb-4">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <input type="password" id="defaultForm-pass" class="form-control validate" placeholder="Contraseña">
+         
+        </div>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button  id="boton-zoom" class="btn btn-default">Crear</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+            <!--fin modal Zoom-->
+
     
 
 
 <!-- modal large -->
-<div class="modal fade" id="largeModal2" tabindex="-1" role="dialog" aria-labelledby="largeModalLabel" aria-hidden="true">
+<div class="modal fade" id="largeModal3" tabindex="-1" role="dialog" aria-labelledby="largeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="largeModalLabel">Elementos de clase</h5>
+                <h5 class="modal-title" id="largeModalLabel">Estadisticas de alumnos</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="card">
                 <div class="card-header">
-                    <strong>Visualizar Video</strong> 
+                    <strong>Vizualizaciones de alumnos</strong> 
                 </div>
-                <div class="card-body card-block">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/T9PzpiL-lPY" allowfullscreen></iframe>
-                      </div>
-                </div>
-                <div class="card-footer">
-                    <button type="submit" id="boton-enviar" class="btn btn-primary btn-sm">
-                        <i class="fa fa-dot-circle-o"></i> Enviar
-                    </button>
-                    <button type="reset" class="btn btn-danger btn-sm">
-                        <i class="fa fa-ban"></i> Reset
-                    </button>
-                </div>
-            </div>
+                <div class="col-lg-12">
+                                <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2 m-b-40">Estadisticas de Tareas</h3>
+                                        <canvas id="pieChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                 
             </div>
         </div>
     </div>
 </div>
 <!-- end modal large -->
-
+    <script src="js/main.min.js"></script>
+    <script src="js/menu.js"></script>
     <!-- Jquery JS-->
     <script src="vendor/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap JS-->

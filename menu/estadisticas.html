@@ -10,7 +10,7 @@
     <meta name="keywords" content="au theme template">
 
     <!-- Title Page-->
-    <title>Tables</title>
+    <title>Dashboard</title>
 
     <!-- Fontfaces CSS-->
     <link href="css/font-face.css" rel="stylesheet" media="all">
@@ -29,9 +29,44 @@
     <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
     <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
     <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <!-- Main CSS-->
     <link href="css/theme.css" rel="stylesheet" media="all">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/modal.css">
+   
+
+
+
+    
+<script>
+
+    $(document).on('click', '#boton-enviar', function(e) {
+        e.preventDefault();
+        swal({
+      title: "Universidad Fray Servando - Español 1(Se creo)",
+      text: "Codigo de clase: 4x87-5415",
+      icon: "success",
+      buttons: true,
+     
+    })
+    .then((willDelete) => {
+      if (willDelete) {
+        window.location.replace("table.html");
+      } else {
+        swal("Your imaginary file is safe!");
+      }
+    });
+    
+    });
+    
+    
+    
+    
+    </script>       
+    
 
 </head>
 
@@ -83,7 +118,7 @@
                                 <i class="fas fa-table"></i>Tables</a>
                         </li>
                         <li>
-                            <a href="form.html">
+                            <a href="estadisticas.html">
                                 <i class="far fa-check-square"></i>Forms</a>
                         </li>
                         <li>
@@ -153,56 +188,58 @@
             </nav>
         </header>
         <!-- END HEADER MOBILE-->
- <!-- MENU SIDEBAR-->
- <aside class="menu-sidebar d-none d-lg-block">
-    <div class="logo">
-        <a href="#">
-            <img src="images/icon/myclassmate.png" alt="Cool Admin" />
-        </a>
-    </div>
-    <div class="menu-sidebar__content js-scrollbar1">
-        <nav class="navbar-sidebar">
-            <ul class="list-unstyled navbar__list">
-                <li class="active has-sub">
-                    <a class="js-arrow" href="index.html">
-                        <i class="fas fa-user"></i>Inicio</a>
-                  
-                </li>
-                <li>
-                    <a href="chart.html">
-                        <i class="fas fa-envelope"></i>Buzon</a>
-                </li>
-                <li>
-                    <a href="calendar.html">
-                        <i class="fas fa-calendar-alt"></i>Calendario</a>
-                </li>
-                <li>
-                    <a href="form.html">
-                        <i class="far fa-chart-bar"></i>Estadisticas</a>
-                </li>
-                <li>
-                    <a href="calendar.html">
-                        <i class="fas fa-check-square"></i>Plantillas de examenes</a>
-                </li>
-                <li>
-                    <a href="map.html">
-                        <i class="fas fa-clock-o"></i>Historial</a>
-                </li>
-                <li class="has-sub">
-                    <a class="js-arrow" href="#">
-                        <i class="fas  fa-users"></i>Administrar alumnos</a>
-                  
-                </li>
-                <li class="has-sub">
-                    <a class="js-arrow" href="#">
-                        <i class="fas fa-desktop"></i>Ayuda</a>
-                  
-                </li>
-            </ul>
-        </nav>
-    </div>
-</aside>
-<!-- END MENU SIDEBAR-->
+
+        <!-- MENU SIDEBAR-->
+        <aside class="menu-sidebar d-none d-lg-block">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/icon/myclassmate.png" alt="Cool Admin" />
+                </a>
+            </div>
+            <div class="menu-sidebar__content js-scrollbar1">
+                <nav class="navbar-sidebar">
+                    <ul class="list-unstyled navbar__list">
+                        <li class="active has-sub">
+                            <a class="js-arrow" href="index.html">
+                                <i class="fas fa-user"></i>Inicio</a>
+                          
+                        </li>
+                        <li>
+                            <a href="chart.html">
+                                <i class="fas fa-envelope"></i>Buzon</a>
+                        </li>
+                        <li>
+                            <a href="calendar.html">
+                                <i class="fas fa-calendar-alt"></i>Calendario</a>
+                        </li>
+                        <li>
+                            <a href="estadisticas.html">
+                                <i class="far fa-chart-bar"></i>Estadisticas</a>
+                        </li>
+                        <li>
+                            <a href="calendar.html">
+                                <i class="fas fa-check-square"></i>Plantillas de examenes</a>
+                        </li>
+                        <li>
+                            <a href="map.html">
+                                <i class="fas fa-clock-o"></i>Historial</a>
+                        </li>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas  fa-users"></i>Administrar alumnos</a>
+                          
+                        </li>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-desktop"></i>Ayuda</a>
+                          
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <!-- END MENU SIDEBAR-->
+
         <!-- PAGE CONTAINER-->
         <div class="page-container">
             <!-- HEADER DESKTOP-->
@@ -376,226 +413,103 @@
             </header>
             <!-- HEADER DESKTOP-->
 
+             <!-- MAIN CONTENT-->
 
-            <!-- MAIN CONTENT-->
-            <div class="main-content">
+             
+             <div class="main-content">
+                 
+                 
                 <div class="section__content section__content--p30">
+                    
                     <div class="container-fluid">
                         
-                       
-                        <div class="row">
-                            <div class="col-md-12">
-                                <!-- DATA TABLE -->
-                                <h3 class="title-5 m-b-35">Revisar mis grupos virtuales</h3>
-                                <div class="table-data__tool">
-                                    <div class="table-data__tool-left">
-
-                                        
+                        <div class="row justify-content-md-center">
+                           
 
 
-                                        <button class="au-btn au-btn-icon au-btn--green au-btn--small" id="boton-admin">
-                                            <i class="zmdi zmdi-plus"></i>Administrar Alumno</button>
-                                            
-                                            <button class="au-btn au-btn-icon au-btn--blue au-btn--small" id="boton-admin">
-                                                <i class="zmdi zmdi-plus"></i>Mis Grupos</button>
-                                        
-                                        </div>
-                                    </div>
-                                    <div class="table-data__tool-right">
-                                        <button class="au-btn au-btn-icon au-btn--green au-btn--small" id="boton-admin">
-                                            <i class="zmdi zmdi-plus"></i>Mover Alumnos</button>
-
-                                            <button class="au-btn au-btn-icon au-btn--blue au-btn--small" id="boton-admin">
-                                                <i class="zmdi zmdi-plus"></i>Eliminar Alumno</button>
-                                                <div class="input-group">
-                                                    <div class="input-group-btn">
-                                                        <button class="btn btn-primary">
-                                                            <i class="fa fa-search"></i> Search
-                                                        </button>
-                                                    </div>
-                                                    <input type="text" id="input1-group2" name="input1-group2" placeholder="Username" class="form-control">
-                                                </div>
+                          
+                         
+                            <div class=" col-md-8">
+                                <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        <div class="container">
+                                            <div class="row">
+                                              <div class="col-sm-4">
+                                                <h3 class="title-2 m-b-40">Estadisticas de proyecto</h3>
+                                              </div>
+                                              <div class="col-sm-4">
                                                
+                                              </div>
+                                              <div class="col-sm-4">
+                                                <button type="button" class="btn btn-outline-primary"><i class="fas  fa-filter"></i></button>
+                                                <button type="button" class="btn btn-outline-primary"><i class="fas  fa-download"></i></button>
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#newPage">Ajustes<i class="fas  fa-gear"></i></button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        
+                                        
+                                        <canvas id="barChart"></canvas>
                                     </div>
-                                    
                                 </div>
-                                
-                                <div class="table-responsive table-responsive-data2">
-                                    <table class="table table-data2">
-                                        <thead>
-                                            <tr>
-                                                <th>
-                                                    <label class="au-checkbox">
-                                                        <input type="checkbox">
-                                                        <span class="au-checkmark"></span>
-                                                    </label>
-                                                </th>
-                                                <th>Alumno (s)</th>
-                                                <th>Clave de Grupo</th>
-                                                <th>Escuela</th>
-                                                <th>Fecha de carga</th>
-                                                
-                                                
-                                                <th></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="tr-shadow">
-                                                <td>
-                                                    <label class="au-checkbox">
-                                                        <input type="checkbox">
-                                                        <span class="au-checkmark"></span>
-                                                    </label>
-                                                </td>
-                                                <td>Ricardo Quesada Cancino</td>
-                                                <td>
-                                                    <span class="block-email">XFGH-5754</span>
-                                                </td>
-                                                <td class="desc">UVM</td>
-                                              
-                                                <td>
-                                                    <span class="status--process">23 Jun 2020</span>
-                                                </td>
-                                               
-                                                <td>
-                                                    <div class="table-data-feature">
-                                                       
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Editar">
-                                                            <i class="zmdi zmdi-edit"></i>
-                                                        </button>
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
-                                                            <i class="zmdi zmdi-delete"></i>
-                                                        </button>
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="More">
-                                                            <i class="zmdi zmdi-more"></i>
-                                                        </button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="spacer"></tr>
-                                            <tr class="tr-shadow">
-                                                <td>
-                                                    <label class="au-checkbox">
-                                                        <input type="checkbox">
-                                                        <span class="au-checkmark"></span>
-                                                    </label>
-                                                </td>
-                                                <td>Hugo Delgadillo Cortez</td>
-                                                <td>
-                                                    <span class="block-email">XFGH-5754</span>
-                                                </td>
-                                                <td class="desc">UVM</td>
-                                             
-                                                <td>
-                                                    <span class="status--process">23 Jun 2020</span>
-                                                </td>
-                                                
-                                                <td>
-                                                    <div class="table-data-feature">
-                                                     
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Editar">
-                                                            <i class="zmdi zmdi-edit"></i>
-                                                        </button>
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
-                                                            <i class="zmdi zmdi-delete"></i>
-                                                        </button>
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="More">
-                                                            <i class="zmdi zmdi-more"></i>
-                                                        </button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="spacer"></tr>
-                                            <tr class="tr-shadow">
-                                                <td>
-                                                    <label class="au-checkbox">
-                                                        <input type="checkbox">
-                                                        <span class="au-checkmark"></span>
-                                                    </label>
-                                                </td>
-                                                <td>Samuel Hernandez</td>
-                                                <td>
-                                                    <span class="block-email">XFGH-5754</span>
-                                                </td>
-                                                <td class="desc">UVM</td>
-                                              
-                                                <td>
-                                                    <span class="status--denied">23 Jun 2019</span>
-                                                </td>
-                                                
-                                                <td>
-                                                    <div class="table-data-feature">
-                                                     
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Editar">
-                                                            <i class="zmdi zmdi-edit"></i>
-                                                        </button>
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Borrar">
-                                                            <i class="zmdi zmdi-delete"></i>
-                                                        </button>
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="More">
-                                                            <i class="zmdi zmdi-more"></i>
-                                                        </button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="spacer"></tr>
-                                            <tr class="tr-shadow">
-                                                <td>
-                                                    <label class="au-checkbox">
-                                                        <input type="checkbox">
-                                                        <span class="au-checkmark"></span>
-                                                    </label>
-                                                </td>
-                                                <td>Edgar Delgadillo Cortez</td>
-                                                <td>
-                                                    <span class="block-email">XDFK-4524</span>
-                                                </td>
-                                                <td class="desc">UVM</td>
-                                            
-                                                <td>
-                                                    <span class="status--process">23 Jun 2020</span>
-                                                </td>
-                                                
-                                                <td>
-                                                    <div class="table-data-feature">
-                                                       
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Editar">
-                                                            <i class="zmdi zmdi-edit"></i>
-                                                        </button>
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Borrar">
-                                                            <i class="zmdi zmdi-delete"></i>
-                                                        </button>
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="More">
-                                                            <i class="zmdi zmdi-more"></i>
-                                                        </button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <!-- END DATA TABLE -->
+
+
+
+
+                               
+
+
+
+
+
                             </div>
+                       
+
+
+                          
+                        
+                        
+                            
+                         
                         </div>
-                      
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="copyright">
-                                    <p></p>
-                                </div>
+                             
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- END MAIN CONTENT-->
+            <!-- END PAGE CONTAINER-->
         </div>
 
     </div>
-    <script type="text/javascript">
-        document.getElementById("boton-admin").onclick = function () {
-            location.href = "alumno.html";
-        };
-    </script>
+
+
+    
+            
+            <!-- Modal -->
+            <div class="modal fade modal-right" id="newPage" tabindex="-1" role="dialog" aria-labelledby="newPage" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>One fine body&hellip;</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    <!-- modal -->
+
+
+
+
     <!-- Jquery JS-->
     <script src="vendor/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap JS-->
@@ -614,8 +528,12 @@
     <script src="vendor/circle-progress/circle-progress.min.js"></script>
     <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
     <script src="vendor/chartjs/Chart.bundle.min.js"></script>
-    <script src="vendor/select2/select2.min.js">
-    </script>
+    <script src="vendor/select2/select2.min.js"></script>
+   
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  
+    
 
     <!-- Main JS-->
     <script src="js/main.js"></script>

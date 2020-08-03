@@ -72,5 +72,5 @@
 
 
 function redirect(){
-    window.location = "menu/index.html"
+    window.location = "menu/index.php"
 }

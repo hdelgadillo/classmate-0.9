@@ -198,7 +198,7 @@
                         <i class="far fa-chart-bar"></i>Estadisticas</a>
                 </li>
                 <li>
-                    <a href="calendar.html">
+                    <a href="exam.html">
                         <i class="fas fa-check-square"></i>Plantillas de examenes</a>
                 </li>
                 <li>
@@ -397,22 +397,7 @@
             <!-- MAIN CONTENT-->
             <div class="main-content">
                 <div class="section__content section__content--p30">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col">
-                              <div class="au-card">
-                                <div id="calendar"></div>
-                              </div>
-                            </div><!-- .col -->
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="copyright">
-                                    <p>Copyright © 2018 Colorlib. All rights reserved. Template by <a href="https://colorlib.com">Colorlib</a>.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdqDTwfbX1Kyul_7lh8kssBQCJ1E_OaSV0xjx07h6Q-bgL12g/viewform?embedded=true" width="640" height="689" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
                 </div>
             </div>
         </div>

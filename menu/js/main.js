@@ -218,7 +218,7 @@
       var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+          labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
           datasets: [
             {
               label: "My First dataset",
@@ -882,22 +882,22 @@
         type: 'bar',
         defaultFontFamily: 'Poppins',
         data: {
-          labels: ["January", "February", "March", "April", "May", "June", "July"],
+          labels: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio"],
           datasets: [
             {
-              label: "My First dataset",
+              label: "Resagado",
               data: [65, 59, 80, 81, 56, 55, 40],
-              borderColor: "rgba(0, 123, 255, 0.9)",
+              borderColor: "rgba(170, 170, 170, 1)",
               borderWidth: "0",
-              backgroundColor: "rgba(0, 123, 255, 0.5)",
+              backgroundColor: "rgba(170, 170, 170, 1)",
               fontFamily: "Poppins"
             },
             {
-              label: "My Second dataset",
+              label: "Entregado",
               data: [28, 48, 40, 19, 86, 27, 90],
               borderColor: "rgba(0,0,0,0.09)",
               borderWidth: "0",
-              backgroundColor: "rgba(0,0,0,0.07)",
+              backgroundColor: "rgba(109,194,25,1)",
               fontFamily: "Poppins"
             }
           ]
@@ -1066,13 +1066,13 @@
           datasets: [{
             data: [45, 25, 20, 10],
             backgroundColor: [
-              "rgba(0, 123, 255,0.9)",
+              "rgba(90, 215, 90,1)",
               "rgba(0, 123, 255,0.7)",
               "rgba(0, 123, 255,0.5)",
               "rgba(0,0,0,0.07)"
             ],
             hoverBackgroundColor: [
-              "rgba(0, 123, 255,0.9)",
+              "rgba(90, 215, 90,1)",
               "rgba(0, 123, 255,0.7)",
               "rgba(0, 123, 255,0.5)",
               "rgba(0,0,0,0.07)"
@@ -1080,10 +1080,11 @@
 
           }],
           labels: [
-            "Green",
-            "Green",
-            "Green",
-            "Green"
+            "Listo",
+            "En proceso",
+            "Estancado",
+            
+            
           ]
         },
         options: {
@@ -1115,25 +1116,25 @@
         type: 'pie',
         data: {
           datasets: [{
-            data: [45, 25, 20, 10],
+            data: [ 25, 20, 10],
             backgroundColor: [
-              "rgba(0, 123, 255,0.9)",
-              "rgba(0, 123, 255,0.7)",
-              "rgba(0, 123, 255,0.5)",
-              "rgba(0,0,0,0.07)"
+              "rgba(90, 215, 90,1)",
+              "rgba(244, 228, 0,1)",
+              "rgba(226, 1, 8,1)",
+              
             ],
             hoverBackgroundColor: [
-              "rgba(0, 123, 255,0.9)",
-              "rgba(0, 123, 255,0.7)",
+              "rgba(90, 215, 90,1)",
+              "rgba(244, 228, 0,1)",
               "rgba(0, 123, 255,0.5)",
-              "rgba(0,0,0,0.07)"
+              
             ]
 
           }],
           labels: [
-            "Green",
-            "Green",
-            "Green"
+            "25% Listo",
+            "20% En proceso",
+            "10% Estancado"
           ]
         },
         options: {
@@ -1671,3 +1672,9 @@
   }
 
 })(jQuery);
+
+
+
+function Estats(){
+  window.location = "estadisticas.php"
+}

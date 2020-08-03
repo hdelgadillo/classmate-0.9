@@ -275,7 +275,7 @@ section {
 /*Page Objects*/
 .page-wrapper {
     overflow: hidden;
-    background: #e5e5e5;
+    background: #084272;
     padding-bottom: 8vh;
 }
 
@@ -287,7 +287,7 @@ section {
 }
 }
 .page-container {
-    background: #e5e5e5;
+    background: #084272;
     padding-left: 300px;
 }
 
